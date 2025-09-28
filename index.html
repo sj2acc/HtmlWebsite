@@ -618,7 +618,7 @@
                 }
                 
                 const audioBlob = await response.audio_data;
-                const audioUrl = URL.createObjectURL(q);
+                const audioUrl = URL.createObjectURL(audioBlob);
                 const audio = new Audio(audioUrl);
                 
                 audio.addEventListener('ended', () => {
